@@ -10,7 +10,7 @@ job('First-Maven-Project-Via-DSL') {
         scm('* * * * *')
     }
     steps {
-        maven('clean package', 'java-tomcat-sample/pom.xml')
+        maven('clean package', 'pom.xml')
     }
     publishers {
         //archive the war file generated
